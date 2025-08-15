@@ -14,9 +14,10 @@ export interface Env{
 }
 
 export default {
-	async fetch(request, env, ctx): Promise<Response> {
+	async fetch(request: Request, env: Env, ctx: ExecutionContext): Promise<Response> {
+		
 		return Response.json({
-			message: 'hi there'
+			message: "you sent a get request"
 		});
-	},
-} satisfies ExportedHandler<Env>;
+	}
+};

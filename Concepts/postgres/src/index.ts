@@ -83,4 +83,5 @@ async function getUserDetailsWithAddress(userId: string) {
         await client.end();
     }
 };
-getUserDetailsWithAddress('3');
+// getUserDetailsWithAddress('3');
+
